@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-US-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML image map</title>
+    <link rel="stylesheet" href="./CSS/center.css">
+    
+</head>
+<body>
+    
+    <img src="./image1.png"  width="800" height="100" alt="" usemap="#myMap2" style="margin:10px 300px">
+    <br /> 
+    <map name="myMap2">
+        <area shape="rect" coords="11,20,82,56" href="./index.html"  alt="">
+        <area shape="rect" coords="105,21,235,56" href="./assign1.html"  alt="">
+        <area shape="rect" coords="257,21,408,53" href="./assign2.html"  alt="">
+        <area shape="rect" coords="428,20,529,55" href="./assign3.html"  alt="">
+        <area shape="rect" coords="592,21,747,55" href="./assign4.html"  alt="">
+        <area shape="rect" coords="759,19,913,54" href="./assign5.html"  alt="">
+    </map>
+    <p style="margin:10px 500px">
+        <span style="color:black;font-weight:bold;font-size:21px">
+        Inroduction to front end technologies</span>
+    </p>
+
+    <img src="./image2.png"  
+    width="500" 
+    height="420"  
+    style="border:5px solid black;margin:10px 400px" alt="" usemap="#myMap">
+
+    <map name="myMap">
+        <area shape="Circle" coords="360,129,117" href="./aboutCSS.html"  alt="">
+        <area shape="rect" coords="32,20,220,206" href="./aboutHTML.html"  alt="">
+        <area shape="rect" coords="37,242,214,407" href="./aboutJS.html"  alt="">
+        <area shape="poly" coords="364,252,434,273,424,362,363,394,304,365,293,273" href="./aboutBS.html"  alt="">
+    </map>
+    <h5 style="text-align: center;color:red">click on any of the above images to know more..</h5>
+    
+</body>
+</html>
+<!--using tool tip inside anchor tag with title attribute-->
