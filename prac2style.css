@@ -1,0 +1,62 @@
+main
+{
+    /* display:flex; 
+    /* just read ther documentation of flex to read all the properties related to flex */
+    /* justify-content:space-around; 
+    flex-wrap:wrap; 
+    height:600px;
+    margin:100px auto;
+    /* vertical margin and next is horizontal margin */
+    /* align-content: space-around; */
+    display: grid;
+    height:400px;
+    width: 400px;
+    background-color:gray;
+    margin:100px auto;
+    /* grid-template-columns:[left] 1fr [center] 1fr [right];
+    grid-template-rows:[top] 1fr [middle] 1fr [bottom]; */
+    /* for below approach u have to remove square class cz this has already fix height and width */
+    grid-template-areas:
+    "orange green"
+    "red red"
+}
+/* .square
+{
+    height:150px;
+    width:150px;
+    margin:20px;
+} */
+.blue
+{
+    background-color: blue;
+    color:blue;
+    /* grid-column: left/center;
+    grid-row: middle/bottom; */
+    grid-area:blue;
+}
+.red
+{
+    background-color: red;
+    color:red;
+    /* for changing to red to the top column */
+    /* grid-column: center/right;
+    grid-row: middle/bottom; */
+
+    /* grid template concept*/
+    grid-area:red;
+
+}
+.orange
+{
+    background-color: orange;
+    color:orange;
+    /* grid template concept*/
+    grid-area:orange;
+}
+.green
+{
+    background-color: green;
+    color:green;
+    /* grid template concept*/
+    grid-area:green;
+}

@@ -1,0 +1,214 @@
+<!--*{} is thumb rule and fontawspme version is 4.7.0 copy only link and then goto fontawesome 4.7 icons and search for icons you require and then paste the code after clicking on the icon-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Sidebar</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    </head>
+    <body>
+        <style>
+            * {font-family:arial; padding: 0; margin: 0;box-sizing: border-box;}
+        
+        .header
+        {
+            width:100%;
+            height:70px;
+            background-color:#000000;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        .header img
+        {
+            width:80px;
+            height:70px;
+            margin-right:15px;
+        }
+        .header h1
+        {
+            line-height:70px;
+            color:white;
+        }
+        .content
+        {
+            width:100%;
+            margin-top:70px;
+            float:right;
+            transition:0.7s;
+        }
+        .content img
+        {
+            width:100%;
+            max-width:700px;
+            display:block;
+            margin:auto;
+        }
+        .content p
+        {
+            text-align:justify;
+            margin-left:100px;
+        }
+       .sidebar
+       {
+           width:24%;
+           height:100%;
+           position:fixed;
+           top:70px;
+           background-color:#11052C;
+           left:-100%;
+           transition:0.7s;
+       }
+       .sidebar ul{
+           list-style:none;
+           line-height:70px;
+
+       }
+       .sidebar ul li{
+           border-bottom:2px solid black;
+       }
+       .sidebar ul li a
+       {
+           display:black;
+           text-decoration:none;
+           font-size:20px;
+           padding:15px 25px;
+           font-family:Arial,Helvetica,sans-serif;
+           color:white;
+           transition:0.4s;
+       }
+       a i{
+           margin-right: 15px;
+       }
+       .sidebar ul li a:hover
+       {
+            border-left:5px solid white;
+       }
+       .shw-btn, 
+       .hide-btn{
+        font-size:35px;
+        color:white;
+        position:fixed;
+        top:30px;
+        left:50px;
+
+       }
+       .hide-btn{
+       opacity:0;
+       }
+       #chk:checked ~ .sidebar{
+           left:0;
+       }
+       #chk:checked ~ .shw-btn{
+           opacity:0;
+       }
+       #chk:checked ~ .hide-btn{
+           opacity:1;
+       }
+       #chk:checked ~ .content{
+           width:82%;
+       }
+       .social 
+       {
+           margin-top:155px;
+            display:flex;
+            justify-content:space-evenly;
+            align-items:center;
+            font-size:30px;
+            border-bottom:2px solid rgba(255,255,255,0.1);
+            padding:14px 25px;
+            border-top:2px solid rgba(255,255,255,0.1);
+       }
+       i
+       {
+           font-size:40px;
+           color:white;
+       }
+               
+       @media(max-width:768px)
+       {
+           .sidebar
+           {
+               width:100%;
+               text-align:center;
+
+           }
+           .header h1
+           {
+               display:none;
+           }
+       }
+
+    </style>
+        <div class="header">
+            <img src="./fukkstack.png" >
+            <h1>FullStack</h1>
+        </div>
+        <input type="checkbox" id="chk" />
+                <label for="chk" class="shw-btn">
+                    <i class="fa fa-bars"></i>
+                </label>
+                <label for="chk" class="hide-btn">
+                    <i class="fa fa-times" ></i>
+                </label> 
+        <div class="sidebar">
+            <!--<div class="menu"> -->
+                <ul>
+                    <li> <a href='#'><i class="fa fa-home"></i><span>Home</span></a></li>
+                    <li> <a href='#'><i class="fa fa-user"></i><span>About</span></a></li>
+                    <li> <a href='#'><i class="fa fa-tasks"></i><span>Services</span></a></li>
+                    <li> <a href='#'><i class="fa fa-id-card"></i><span>contact</span></a></li>
+                    <li> <a href='#'><i class="fa fa-rss"></i><span>Blog</span></a> </li>
+                    
+                
+                </ul>
+                <div class="social">
+                    <a href=""><i class="fa fa-facebook-square"></i></a>
+                    <a href=""><i class="fa fa-youtube-square"></i></a>
+                    <a href=""><i class="fa fa-instagram"></i></a>
+                </div>  
+            <!-- </div> -->   
+        </div>  
+        <div class="content">
+            <img src="./full stack image.png" >
+                <p>
+                What are Full Stack Developers?
+
+                Full Stack Developers are developers that design complete apps and websites. These developers work on all facets of 
+                development, from frontend, to backend, to database and even debugging and testing. In short, the developer must 
+                understand the app through and through. Frontend developers are more sought after because of their expertise of not in 
+                one but multiple technologies. They can handle all aspects of development, and it can result in a more seamlessly created 
+                roduct.
+                However, resources to become a Full Stack Developer are limited and only offer sections or just random technologies that 
+                you must learn and combine on your own. So, we introduced this course that compiles all technologies in perfect sync to 
+                help developers transition from a simple developer to become a Full Stack Developer.
+                Starting from frontend development, the learner will slowly progress to become to other aspects of development including
+                backend, database, debugging, version control and other essential technologies that are helpful for a developer.
+                Our Full Stack Course breaks down the fundamentals of each technology that you would require to become a Full Stack 
+                Developer. The entire course is broken down into five separate segments: Frontend, Backend, Database, Other Essential 
+                Technologies and Debugging/Version Control. Each section includes multiple technologies to help you gain more experience 
+                as a developer.
+                That’s not it! In addition to theory based learning, the course also focuses on practical applications by covering 
+                multiple projects in great detail, helping you learn with hands-on experience.
+                Let’s look at the different technologies and frameworks that you will learn:
+                Frontend – HTML, HMTL5, CSS3, Twitter Bootstrap, JavaScript, jQuery
+
+                Backend – Node.js, Meteor.js, Angular 2, PHP, Ruby on Rails
+                Database – MySQL, PostgreSQL, MongoDB, CouchDB, Apache Cassandra
+                Other Essential Technologies – Memcached, Redis, Apache Lucene, Apache Solr
+                Debugging/Version Control – GIT, Subversion, Task Runners (Grunt, Gulp), Debuggers (Xdebug, Firedebug)
+                Each technology will include functional projects that you will create with the help of the instructor. 
+                Here are a few of the projects are included in this course:
+                PHP Job Board
+                AJAX Github Profile Finder
+                RESTful JSON API
+                SASS Template Page Cache/Memcached
+                PHP MYSQL Messaging App
+                HTML5 Note App Using LocalStorage
+            </p>
+        </div>
+    </body>
+</html>

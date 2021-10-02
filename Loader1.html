@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loader</title>
+</head>
+<style>
+    .container
+    {
+        width:100%;
+        height:100vh;
+        justify-content:center;
+        display:flex;
+        align-items: center;
+        flex-direction: column; 
+    }
+    .ball
+    {
+        width:70px;
+        height:70px;
+        background-image: linear-gradient(yellow 50%,blue 50%);
+        border-radius: 50%;
+        animation:bounce 2s linear infinite;   
+    }
+    @keyframes bounce {
+        0% {
+            transform:translateY(0px) rotate(0deg);
+        }
+        50%{
+            transform: translateY(-200px) rotate(180deg);
+        }
+        100%{
+            transform: translateY(0px) rotate(360deg);
+        }
+    }
+    .shadow
+    {
+        width:70px;
+        height:10px;
+        background-color: grey;
+        border-radius: 50%;
+        animation:shadow 2s linear infinite;
+    }
+    @keyframes shadow {
+        0%
+        {
+            transform: scale(1);
+        }
+        50%
+        {
+            transform: scale(0.3);
+            opacity:0.3;
+        }
+        100%
+        {
+            transform: scale(1.5);
+        }
+    }
+    .dots{
+        font-size: 100px;
+        margin-left: 10px;
+        animation:dotAni 2s linear infinite;
+    }
+    @keyframes dotAni {
+        0%
+        {
+            opacity: 1;
+        }
+        50%
+        {
+            opacity: 0;
+        }
+        100%
+        {
+            opacity: 1;
+        }
+    }
+
+
+</style>
+<body>
+    <div class="container">
+        <div class="ball"></div>
+        <div class="shadow"></div>
+        <div class="loading">
+            <p style="font-size: 30px;">Loading <span class="dots">...</span></p>
+        </div>
+    </div>
+</body>
+</html>

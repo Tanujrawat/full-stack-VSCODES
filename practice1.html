@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width,intial-scale=1.0" />
+    <title>pratice session about responsiveness.</title>
+    
+    <style>
+        .container
+        {
+            border:4px solid black;
+        }
+        .container::after
+        {
+            content:'';
+            display:block;
+            clear:both;
+        }
+        .box1
+        {
+            height:200px;
+            width:200px;
+            background-color: chartreuse;
+            float:left;
+            margin:15px;
+        }
+        .box2
+        {
+            height:200px;
+            width:200px;
+            background-color: red;
+        }
+        .box3
+        {
+            height:200px;
+            width:100%;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body> 
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+</body>
+</html>    
