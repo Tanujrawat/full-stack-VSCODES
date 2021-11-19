@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+        form #decrease
+        {
+            margin-right:-4px;
+            border-radius: 8px 0 0 8px;
+        }
+        form #increase
+        {
+            margin-left:-4px;
+            border-radius: 0 8px 8px 0;
+        }
+        form
+        {
+            width: 300px;
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 50px;
+        }
+        .value-button
+        {
+            display: inline-block;
+            border: 5px solid #ddd;
+            margin:0px;
+            width: 40px;
+            height: 20px;
+            /* text-align: center; 
+            vertical-align: middle; */
+            padding: 11px 0;
+            background: #eee;
+            /* -webkit-touch-callout: none; */
+            -webkit-user-select: none;
+            /* -khtml-user-select: none; */
+            /* -moz-user-select: none; */
+            /* -ms-user-select: none; */
+            user-select: none;
+        }
+        .value-button:hover
+        {
+            cursor: pointer;
+        }
+        /* form #input-wrap
+        {
+            margin:0px;
+            padding:0px;
+        } */
+        input#number
+        {
+            text-align: center;
+            border: none;
+            border-top: 2px solid #ddd;
+            border-bottom: 2px solid #ddd;
+            margin: 0;
+            width: 50px;
+            height: 40px;
+        }
+       header{
+           margin-top: 0px;
+           font-size: 50px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+       }
+       .container
+       {
+           height:100vh;
+           background-color: burlywood;
+       }
+    </style>
+</head>
+<body>
+    <script language="Javascript" type="text/Javascript">
+        function increaseValue()
+        {
+            var value = parseInt(document.getElementById('number').value,10);
+            value = isNaN(value) ? 0:value;
+            value++;
+            document.getElementById('number').value = value;
+        }
+
+        function decreaseValue()
+        {
+            var value = parseInt(document.getElementById('number'));
+            value = isNaN(value) ? 0:value;
+            value<1 ? value = 1:'';
+            value--;
+            document.getElementById('number').value = value;
+        }
+    </script>
+    <div class="container">
+        <header>Counter</header>
+    <form>
+        <div class="value-button" id="decrease" onclick="decreaseValue()" value="DecreaseValue">-</div>
+        <input type="number" id="number" value="0" />
+        <div class="value-button" id ="increase" onclick="increaseValue()" value="IncreaseValue">+</div>
+    </form>
+    </div>
+</body>
+</html>

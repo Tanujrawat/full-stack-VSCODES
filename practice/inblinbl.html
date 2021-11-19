@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p
+        {
+            outline: 2px solid orange;
+        }
+        /* a
+        {
+            outline: 2px solid red; */
+            /*below properties are not going to affect block level elements  bcause  
+            height: 100px;
+            margin-top: 200px;
+            margin-bottom: 200px; */
+            /* font-size: 100px;
+        } */
+
+        .one
+        {
+            display: inline-block;
+            /* display: block; */
+            background: orange;
+            color: black;
+            padding: 25px 25px; 
+            /* height and width */
+            text-decoration: none;
+
+            /* beloe property works only if display:inline block is applied */
+            /* inline helps putiting in one line and block helps in getting 
+            heigth and padding  */
+
+            margin-top: 50px;
+            padding: 30px;
+            height: 10px;
+        }
+        .one:hover{
+            background: blue;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <h1>block inline and block level elements </h1>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio ea omnis mollitia illum eveniet deleniti fugiat doloribus <a href="#">this is a link</a> maiores, quasi, quaerat eum commodi voluptatem enim eligendi aliquam, nemo debitis assumenda esse!</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <a href="#">this is a link</a> Doloremque blanditiis quia ducimus placeat itaque dolorum. Dolorum, sunt praesentium! Accusantium explicabo non exercitationem ea enim laboriosam, sint nisi ipsam odio distinctio?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            <a href="#">this is a link</a>
+            Repellendus illo nobis quia in quisquam velit nihil asperiores tempora. Possimus, delectus! Voluptate repellat sint velit nulla quia ab placeat veniam quas?</p>
+
+            <nav>
+                <a href="/html">HTML</a>
+                <a href="/css">CSS</a>
+                <a href="/html">java</a>
+                <a href="/html">other</a>
+            </nav>
+    </div>
+    <a href="#" class="one">this is a link/button</a>
+    <a href="#" class="one">this is another link/button</a>
+</body>
+</html>

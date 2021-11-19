@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<style>
+    caption
+    {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: blue;
+        font-size: 45px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    table{
+        border-collapse: collapse;
+        width: 80%;
+        margin: auto;
+        background-color: rgb(248, 250, 226);
+    }
+    table, th, td,tr{
+            border:2px solid white;
+            border-radius: 10px;
+    }
+    td{
+        /* align-items: center; */
+        /* justify-content: center; -->  used in flex*/
+        text-align: center;
+        padding: 5px;
+        font-size: 20px;
+    }
+    th{
+        padding: 20px;
+        font-size: 25px;
+    }
+    .fa-check
+    {
+        color:green
+    }
+    .fa-times
+    {
+        color:red;
+    }
+    table#alter tr:nth-child(odd)
+    {
+        background-color: lightcyan;
+    }
+    table#alter tr:nth-child(even)
+    {
+        background-color: lightblue;
+    } 
+    button
+    {
+        background-color: blue;
+        border-radius: 10px;
+        font-size: 25px;
+        color: white;
+    }
+    /* a
+    {
+        text-decoration: none;
+        color: blue;
+        font-size: 20px;
+    }
+    #1{
+        color: red;
+    }
+    tr:nth-child(even){
+        background-color: green;
+    } */
+</style>
+<body>
+    <table id="alter">
+        <colgroup id="1"></colgroup>
+        <colgroup id="2"></colgroup>
+        <colgroup id="3"></colgroup>
+        <colgroup id="4"></colgroup>
+        <caption>
+            SELECT YOUR PLAN
+        </caption>
+        <tr>
+            <th><i class="fal fa-file-spreadsheet" style="padding-right: 5px;font-size: 25px;color:blue"></i>Basic</th>
+            <th><i class="fas fa-comment-plus" style="padding-right: 5px;color:blue"></i>Plus</th>
+            <th><i class="fab fa-telegram" style="padding-right: 5px;color:blue"></i>Deluxe</th>
+            <th><i class="fas fa-tachometer-alt-slow" style="padding-right: 5px;color:blue"></i>Pro</th>
+        </tr>
+        <tr>
+            <td>Rs. 500</td>
+            <td>Rs. 1500</td>
+            <td>Rs. 2500</td>
+            <td>Rs. 3500</td>
+        </tr>
+        <tr>
+            <td>50 pages</td>
+            <td>75 pages</td>
+            <td>Unlimited</td>
+            <td>Unlimited</td>
+        </tr>
+        <tr>
+            <td>3 Users</td>
+            <td>5 Users</td>
+            <td>10 Users</td>
+            <td>Unlimited</td>
+        </tr>
+        <tr>
+            <td>10 Sites</td>
+            <td>25 Sites</td>
+            <td>100 Sites</td>
+            <td>Unlimited</td>
+        </tr>
+        <tr>
+            <td>50 MB</td>
+            <td>250 MB</td>
+            <td>1 GB</td>
+            <td>5 GB</td>
+        </tr>
+        <tr>
+            <td>Induced</td>
+            <td>Induced</td>
+            <td>Induced</td>
+            <td>Induced</td>
+        </tr>
+        <tr>
+            <td><i class="fa fa-check" ></i></td>
+            <td><i class="fa fa-check" ></i></td>
+            <td><i class="fa fa-check" ></i></td>
+            <td><i class="fa fa-check" ></i></td>
+        </tr>
+        <tr>
+            <td><i class="fa fa-times"></i></td>
+            <td><i class="fa fa-check" ></i></td>
+            <td><i class="fa fa-check" ></i></td>
+            <td><i class="fa fa-check" ></i></td>
+        </tr>
+        <tr>
+            <td><i class="fa fa-times"></i></td>
+            <td><i class="fa fa-check" ></i></td>
+            <td><i class="fa fa-check" ></i></td>
+            <td><i class="fa fa-check" ></i></td>
+        </tr>
+        <tr>
+            <td><i class="fa fa-times"></i></td>
+            <td><i class="fa fa-times" ></i></td>
+            <td><i class="fa fa-check" ></i></td>
+            <td><i class="fa fa-check" ></i></td>
+        </tr>
+        <tr>
+            <td><i class="fa fa-times"></i></td>
+            <td><i class="fa fa-times" ></i></td>
+            <td><i class="fa fa-times" ></i></td>
+            <td><i class="fa fa-check" ></i></td>
+        </tr>
+        <tr>
+            <td><i class="fa fa-times"></i></td>
+            <td><i class="fa fa-times" ></i></td>
+            <td><i class="fa fa-times" ></i></td>
+            <td><i class="fa fa-check" ></i></td>
+        </tr>
+        <tr>
+            <td><button>Sign up</button></td>
+            <td><button>Sign up</button></i></td>
+            <td><button>Sign up</button></i></td>
+            <td><button>Sign up</button></i></td>
+        </tr>
+    </table>
+</body>
+</html>
